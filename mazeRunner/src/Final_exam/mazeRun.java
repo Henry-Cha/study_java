@@ -195,6 +195,11 @@ public class mazeRun extends JFrame {
 					addKeyListener(klistener1);
 					drawRunner();
 				}} );	
+			ActionListener alistener1 = e -> {			
+				init();
+			};
+			reButton.addActionListener(alistener1);
+			
 			
 		}
 
@@ -416,11 +421,6 @@ public class mazeRun extends JFrame {
 			System.out.println("¼¼ÀÌºê");
 			} catch (Exception e1) {
 			}
-
-			ActionListener alistener1 = e -> {			
-				init();
-			};
-			reButton.addActionListener(alistener1);
 			
 		}
 		
